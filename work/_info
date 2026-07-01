@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/fetools/work_area/frontend/Batch_11/LohithKS/SV/projects/Single_Port_RAM_Verification
+Xdefines_svh_unit
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1782897832
+!i10b 1
+!s100 ciWXANi01OFj?QWoUcWS_2
+Ibng7K5_zz;JOl1iGN=9B<0
+Vbng7K5_zz;JOl1iGN=9B<0
+!i103 1
+S1
+R0
+w1782897813
+8defines.svh
+Z2 Fdefines.svh
+L0 3
+Z3 OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1782897832.000000
+!s107 defines.svh|
+!s90 defines.svh|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+Xtrasaction_base_sv_unit
+R1
+!s110 1782898823
+!i10b 1
+!s100 c@8NUPE6;C^Qz?2kj;RDi0
+I7B?H6DfXmM8WkaZih;TUP3
+V7B?H6DfXmM8WkaZih;TUP3
+!i103 1
+S1
+R0
+w1782898820
+8trasaction_base.sv
+Ftrasaction_base.sv
+R2
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1782898823.000000
+!s107 defines.svh|trasaction_base.sv|
+!s90 trasaction_base.sv|
+!i113 0
+R4
+R5
