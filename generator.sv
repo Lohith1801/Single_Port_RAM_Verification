@@ -1,13 +1,18 @@
 class generator;
-	mailbox #(transaction)mbx_gen2drv;
-	transaction tx;
-	function new(mailbox mbx_gen2drv);
+
+	//handle declarations
+	mailbox #(transaction_base)mbx_gen2drv;
+	transaction_base tx;
+
+	//Constructor
+	function new(mailbox #(transaction_base)mbx_gen2drv);
 		this.mbx_gen2drv = mbx_gen2drv;
-		this.tx = new();
 	endfunction
 
+	//generator initiator task
 	task run;
 		repeat(10) begin
+			tx = new();
 			assert(tx.randomize()) begin
 				$display("Generated new Packet...");
 				mbx_gen2drv.put(tx);

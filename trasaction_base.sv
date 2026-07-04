@@ -1,4 +1,3 @@
-`include"defines.svh"
 
 class transaction_base;
 	rand logic [`DATA_WIDTH -1 :0]data_in;
