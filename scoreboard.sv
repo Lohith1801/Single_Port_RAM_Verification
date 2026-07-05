@@ -45,11 +45,10 @@ class scoreboard;
 
 	task report;
 		$display("----------------------------------------VERFICATION REPORT---------------------------------------------");
-		pass_percentage = (pass_count / (fail_count + pass_count))*100;
-		$display("Engineer : Lohith K S");
+		pass_percentage = (pass_count / (fail_count + pass_count))*100.0;
 		$display("PASS COUNT = %d", pass_count);
 		$display("FAIL COUNT = %d", fail_count);
-		$display("PASS PERCENTAGE = %d", pass_percentage);
+		$display("PASS PERCENTAGE = %0.2f%%", pass_percentage);
 	        $display("-------------------------------------------------------------------------------------------------------");
 	endtask
 endclass
