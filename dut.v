@@ -1,5 +1,5 @@
 
-module RAM #(parameter DATA_WIDTH = 8, ADDR_WIDTH = 5)
+module RAM #(parameter DATA_WIDTH = 8, ADDR_WIDTH = 5, ADDR_COUNT = 32)
 	
 	(
 	input clk, rst,	
@@ -11,7 +11,7 @@ module RAM #(parameter DATA_WIDTH = 8, ADDR_WIDTH = 5)
 );
 	
 	//memory declaration 
-	reg [DATA_WIDTH -1 :0] mem[ADDR_WIDTH -1:0];
+	reg [DATA_WIDTH -1 :0] mem[0:ADDR_COUNT -1];
 
 	
 	always@(posedge clk) begin
@@ -19,13 +19,12 @@ module RAM #(parameter DATA_WIDTH = 8, ADDR_WIDTH = 5)
 			data_out <= {DATA_WIDTH{1'bz}};
 		end
 		else begin
-			data_out <= data_out;
 			case({write_enb,read_enb}) 
-				2'b00: data_out = data_out;
-				2'b01:	data_out = mem[address];
-				2'b10: mem[address] = data_in;
+				2'b00: data_out <= data_out;
+				2'b01:	data_out <= mem[address];
+				2'b10: mem[address] <= data_in;
 				
-				default: data_out = data_out;
+				default: data_out <= data_out;
 
 			endcase
 		end

@@ -10,15 +10,15 @@ module test_bench;
 	end
 
 	RAM_inf inf(clk,rst);
-	RAM dut(.data_in(inf.data_in),.write_enb(inf.write_enb),.read_enb(inf.read_enb), .address(inf.address), .clk(clk), .rst(rst), .data_out(inf.data_out));
+	RAM #(.DATA_WIDTH(`DATA_WIDTH),.ADDR_WIDTH(`ADDR_WIDTH),.ADDR_COUNT(`ADDR_COUNT)) dut (.data_in(inf.data_in),.write_enb(inf.write_enb),.read_enb(inf.read_enb), .address(inf.address), .clk(clk), .rst(rst), .data_out(inf.data_out));
 
-	test T = new(inf.DRV);
+	test T = new(inf.DRV,inf.MON,inf.REF);
 
 	initial begin
 		rst = 1;
 		#10 rst =0; 
 		T.run();
-		#20 $finish;
+		#500 $finish;
 	end
 endmodule
 

@@ -5,14 +5,14 @@ interface RAM_inf(input bit clk,rst);
 	logic [`ADDR_WIDTH-1:0]address;
 
 	clocking cb2drv @(posedge clk);
-		default input #0 output #0;
+		default input #1 output #1;
 		input rst;
 		output write_enb, read_enb, data_in, address;	
 	endclocking
 
 	clocking cb2mon @(posedge clk);
 		default input #0 output #0;
-		input data_out;
+		input data_out, rst, write_enb, read_enb, address, data_in;
 	endclocking
 
 	clocking cb2ref @(posedge clk);
