@@ -1,0 +1,295 @@
+# vsim -vopt work.test_bench -voptargs="+acc=npr" -assertdebug -l log_file.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll ucdb_file.ucdb; run -all; exit" 
+# Start time: 00:02:05 on Jul 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.RAM_inf(fast)
+# Loading work.tb_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.test_bench(fast)
+# Loading work.RAM_inf(fast)
+# Loading work.RAM(fast)
+# coverage save -onexit -assert -directive -cvg -codeAll ucdb_file.ucdb
+#  run -all
+# TX_COUNT =           8
+# TEST CASE 1 : BASE TEST
+# TX_COUNT =           8
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# @15 [DRV] DRIVINGGGGGGGG Transaction packet -           0 | write_enb = 1 read_enb = 0 address = 3 data_in =  58 
+# @15 [MON]: Transmitting Transaction packet -           0 | write_enb = 0 read_enb = 0 address = 0 data_in =   0 data_out =   z
+# @15 [REF]: Transmitting Transaction packet -           0 | write_enb = 1 read_enb = 0 address = 3 data_in =  58 data_out =   z
+#  
+# @25 [DRV] DRIVINGGGGGGGG Transaction packet -           1 | write_enb = 1 read_enb = 0 address = 0 data_in =  88 
+# @25 [MON]: Transmitting Transaction packet -           1 | write_enb = 1 read_enb = 0 address = 3 data_in =  58 data_out =   z
+# @25 [REF]: Transmitting Transaction packet -           1 | write_enb = 1 read_enb = 0 address = 0 data_in =  88 data_out =   z
+#  
+# @35 [DRV] DRIVINGGGGGGGG Transaction packet -           2 | write_enb = 1 read_enb = 0 address = 1 data_in =  59 
+# @35 [MON]: Transmitting Transaction packet -           2 | write_enb = 1 read_enb = 0 address = 0 data_in =  88 data_out =   z
+# @35 [REF]: Transmitting Transaction packet -           2 | write_enb = 1 read_enb = 0 address = 1 data_in =  59 data_out =   z
+#  
+# @45 [DRV] DRIVINGGGGGGGG Transaction packet -           3 | write_enb = 1 read_enb = 0 address = 2 data_in =  36 
+# @45 [MON]: Transmitting Transaction packet -           3 | write_enb = 1 read_enb = 0 address = 1 data_in =  59 data_out =   z
+# @45 [REF]: Transmitting Transaction packet -           3 | write_enb = 1 read_enb = 0 address = 2 data_in =  36 data_out =   z
+#  
+# @55 [DRV] DRIVINGGGGGGGG Transaction packet -           4 | write_enb = 0 read_enb = 1 address = 0 data_in =  94 
+# @55 [MON]: Transmitting Transaction packet -           4 | write_enb = 1 read_enb = 0 address = 2 data_in =  36 data_out =   z
+# @55 [REF]: Transmitting Transaction packet -           4 | write_enb = 0 read_enb = 1 address = 0 data_in =  94 data_out =  88
+#  
+# @65 [DRV] DRIVINGGGGGGGG Transaction packet -           5 | write_enb = 0 read_enb = 1 address = 3 data_in = 186 
+# @65 [MON]: Transmitting Transaction packet -           5 | write_enb = 0 read_enb = 1 address = 0 data_in =  94 data_out =  88
+# @65 [REF]: Transmitting Transaction packet -           5 | write_enb = 0 read_enb = 1 address = 3 data_in = 186 data_out =  58
+#  
+# @75 [DRV] DRIVINGGGGGGGG Transaction packet -           6 | write_enb = 0 read_enb = 1 address = 2 data_in =  82 
+# @75 [MON]: Transmitting Transaction packet -           6 | write_enb = 0 read_enb = 1 address = 3 data_in = 186 data_out =  58
+# @75 [REF]: Transmitting Transaction packet -           6 | write_enb = 0 read_enb = 1 address = 2 data_in =  82 data_out =  36
+#  
+# @85 [DRV] DRIVINGGGGGGGG Transaction packet -           7 | write_enb = 0 read_enb = 1 address = 1 data_in =  46 
+# @85 [MON]: Transmitting Transaction packet -           7 | write_enb = 0 read_enb = 1 address = 2 data_in =  82 data_out =  36
+# @85 [REF]: Transmitting Transaction packet -           7 | write_enb = 0 read_enb = 1 address = 1 data_in =  46 data_out =  59
+#  
+# @95 [MON]: Transmitting Transaction packet -           8 | write_enb = 0 read_enb = 1 address = 1 data_in =  46 data_out =  59
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# ----------------------------------------VERFICATION REPORT---------------------------------------------
+# PASS COUNT =           8
+# FAIL COUNT =           0
+# PASS PERCENTAGE = 100.00%
+# -------------------------------------------------------------------------------------------------------
+#  
+# -----------------------------------------------------COVERAGE REPORT-----------------------------------------------------------------
+#  COVERAGE = 85.16%
+# TEST CASE 2 : WRITE FIRST
+# TX_COUNT =           8
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# @105 [DRV] DRIVINGGGGGGGG Transaction packet -           8 | write_enb = 1 read_enb = 0 address = 3 data_in = 156 
+# @105 [MON]: Transmitting Transaction packet -           9 | write_enb = 0 read_enb = 1 address = 1 data_in =  46 data_out =  59
+# @105 [REF]: Transmitting Transaction packet -           8 | write_enb = 1 read_enb = 0 address = 3 data_in = 156 data_out =   z
+#  
+# @115 [DRV] DRIVINGGGGGGGG Transaction packet -           9 | write_enb = 1 read_enb = 0 address = 0 data_in = 217 
+# @115 [MON]: Transmitting Transaction packet -          10 | write_enb = 1 read_enb = 0 address = 3 data_in = 156 data_out =   z
+# @115 [REF]: Transmitting Transaction packet -           9 | write_enb = 1 read_enb = 0 address = 0 data_in = 217 data_out =   z
+#  
+# @125 [DRV] DRIVINGGGGGGGG Transaction packet -          10 | write_enb = 1 read_enb = 0 address = 1 data_in =   1 
+# @125 [MON]: Transmitting Transaction packet -          11 | write_enb = 1 read_enb = 0 address = 0 data_in = 217 data_out =   z
+# @125 [REF]: Transmitting Transaction packet -          10 | write_enb = 1 read_enb = 0 address = 1 data_in =   1 data_out =   z
+#  
+# @135 [DRV] DRIVINGGGGGGGG Transaction packet -          11 | write_enb = 1 read_enb = 0 address = 2 data_in = 246 
+# @135 [MON]: Transmitting Transaction packet -          12 | write_enb = 1 read_enb = 0 address = 1 data_in =   1 data_out =   z
+# @135 [REF]: Transmitting Transaction packet -          11 | write_enb = 1 read_enb = 0 address = 2 data_in = 246 data_out =   z
+#  
+# @145 [DRV] DRIVINGGGGGGGG Transaction packet -          12 | write_enb = 1 read_enb = 0 address = 2 data_in = 215 
+# @145 [MON]: Transmitting Transaction packet -          13 | write_enb = 1 read_enb = 0 address = 2 data_in = 246 data_out =   z
+# @145 [REF]: Transmitting Transaction packet -          12 | write_enb = 1 read_enb = 0 address = 2 data_in = 215 data_out =   z
+#  
+# @155 [DRV] DRIVINGGGGGGGG Transaction packet -          13 | write_enb = 1 read_enb = 0 address = 3 data_in =  97 
+# @155 [MON]: Transmitting Transaction packet -          14 | write_enb = 1 read_enb = 0 address = 2 data_in = 215 data_out =   z
+# @155 [REF]: Transmitting Transaction packet -          13 | write_enb = 1 read_enb = 0 address = 3 data_in =  97 data_out =   z
+#  
+# @165 [DRV] DRIVINGGGGGGGG Transaction packet -          14 | write_enb = 1 read_enb = 0 address = 0 data_in = 113 
+# @165 [MON]: Transmitting Transaction packet -          15 | write_enb = 1 read_enb = 0 address = 3 data_in =  97 data_out =   z
+# @165 [REF]: Transmitting Transaction packet -          14 | write_enb = 1 read_enb = 0 address = 0 data_in = 113 data_out =   z
+#  
+# @175 [DRV] DRIVINGGGGGGGG Transaction packet -          15 | write_enb = 1 read_enb = 0 address = 1 data_in =  97 
+# @175 [MON]: Transmitting Transaction packet -          16 | write_enb = 1 read_enb = 0 address = 0 data_in = 113 data_out =   z
+# @175 [REF]: Transmitting Transaction packet -          15 | write_enb = 1 read_enb = 0 address = 1 data_in =  97 data_out =   z
+#  
+# @185 [MON]: Transmitting Transaction packet -          17 | write_enb = 1 read_enb = 0 address = 1 data_in =  97 data_out =   z
+# ----------------------------------------VERFICATION REPORT---------------------------------------------
+# PASS COUNT =           8
+# FAIL COUNT =           0
+# PASS PERCENTAGE = 100.00%
+# -------------------------------------------------------------------------------------------------------
+#  
+# -----------------------------------------------------COVERAGE REPORT-----------------------------------------------------------------
+#  COVERAGE = 86.98%
+# TEST CASE 3 : READ FIRST
+# TX_COUNT =           8
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# @195 [DRV] DRIVINGGGGGGGG Transaction packet -          16 | write_enb = 0 read_enb = 1 address = 1 data_in =  20 
+# @195 [MON]: Transmitting Transaction packet -          18 | write_enb = 1 read_enb = 0 address = 1 data_in =  97 data_out =   z
+# @195 [REF]: Transmitting Transaction packet -          16 | write_enb = 0 read_enb = 1 address = 1 data_in =  20 data_out =  97
+#  
+# @205 [DRV] DRIVINGGGGGGGG Transaction packet -          17 | write_enb = 0 read_enb = 1 address = 2 data_in = 197 
+# @205 [MON]: Transmitting Transaction packet -          19 | write_enb = 0 read_enb = 1 address = 1 data_in =  20 data_out =  97
+# @205 [REF]: Transmitting Transaction packet -          17 | write_enb = 0 read_enb = 1 address = 2 data_in = 197 data_out = 215
+#  
+# @215 [DRV] DRIVINGGGGGGGG Transaction packet -          18 | write_enb = 0 read_enb = 1 address = 0 data_in = 187 
+# @215 [MON]: Transmitting Transaction packet -          20 | write_enb = 0 read_enb = 1 address = 2 data_in = 197 data_out = 215
+# @215 [REF]: Transmitting Transaction packet -          18 | write_enb = 0 read_enb = 1 address = 0 data_in = 187 data_out = 113
+#  
+# @225 [DRV] DRIVINGGGGGGGG Transaction packet -          19 | write_enb = 0 read_enb = 1 address = 3 data_in = 224 
+# @225 [MON]: Transmitting Transaction packet -          21 | write_enb = 0 read_enb = 1 address = 0 data_in = 187 data_out = 113
+# @225 [REF]: Transmitting Transaction packet -          19 | write_enb = 0 read_enb = 1 address = 3 data_in = 224 data_out =  97
+#  
+# @235 [DRV] DRIVINGGGGGGGG Transaction packet -          20 | write_enb = 0 read_enb = 1 address = 1 data_in = 245 
+# @235 [MON]: Transmitting Transaction packet -          22 | write_enb = 0 read_enb = 1 address = 3 data_in = 224 data_out =  97
+# @235 [REF]: Transmitting Transaction packet -          20 | write_enb = 0 read_enb = 1 address = 1 data_in = 245 data_out =  97
+#  
+# @245 [DRV] DRIVINGGGGGGGG Transaction packet -          21 | write_enb = 0 read_enb = 1 address = 2 data_in = 206 
+# @245 [MON]: Transmitting Transaction packet -          23 | write_enb = 0 read_enb = 1 address = 1 data_in = 245 data_out =  97
+# @245 [REF]: Transmitting Transaction packet -          21 | write_enb = 0 read_enb = 1 address = 2 data_in = 206 data_out = 215
+#  
+# @255 [DRV] DRIVINGGGGGGGG Transaction packet -          22 | write_enb = 0 read_enb = 1 address = 3 data_in = 192 
+# @255 [MON]: Transmitting Transaction packet -          24 | write_enb = 0 read_enb = 1 address = 2 data_in = 206 data_out = 215
+# @255 [REF]: Transmitting Transaction packet -          22 | write_enb = 0 read_enb = 1 address = 3 data_in = 192 data_out =  97
+#  
+# @265 [DRV] DRIVINGGGGGGGG Transaction packet -          23 | write_enb = 0 read_enb = 1 address = 0 data_in = 111 
+# @265 [MON]: Transmitting Transaction packet -          25 | write_enb = 0 read_enb = 1 address = 3 data_in = 192 data_out =  97
+# @265 [REF]: Transmitting Transaction packet -          23 | write_enb = 0 read_enb = 1 address = 0 data_in = 111 data_out = 113
+#  
+# @275 [MON]: Transmitting Transaction packet -          26 | write_enb = 0 read_enb = 1 address = 0 data_in = 111 data_out = 113
+# ----------------------------------------VERFICATION REPORT---------------------------------------------
+# PASS COUNT =           8
+# FAIL COUNT =           0
+# PASS PERCENTAGE = 100.00%
+# -------------------------------------------------------------------------------------------------------
+#  
+# -----------------------------------------------------COVERAGE REPORT-----------------------------------------------------------------
+#  COVERAGE = 88.54%
+# TEST CASE 4 : WRITE = 0 READ = 0
+# TX_COUNT =           8
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# @285 [DRV] DRIVINGGGGGGGG Transaction packet -          24 | write_enb = 0 read_enb = 0 address = 1 data_in = 238 
+# @285 [MON]: Transmitting Transaction packet -          27 | write_enb = 0 read_enb = 1 address = 0 data_in = 111 data_out = 113
+# @285 [REF]: Transmitting Transaction packet -          24 | write_enb = 0 read_enb = 0 address = 1 data_in = 238 data_out =   z
+#  
+# @295 [DRV] DRIVINGGGGGGGG Transaction packet -          25 | write_enb = 0 read_enb = 0 address = 2 data_in = 193 
+# @295 [MON]: Transmitting Transaction packet -          28 | write_enb = 0 read_enb = 0 address = 1 data_in = 238 data_out =   z
+# @295 [REF]: Transmitting Transaction packet -          25 | write_enb = 0 read_enb = 0 address = 2 data_in = 193 data_out =   z
+#  
+# @305 [DRV] DRIVINGGGGGGGG Transaction packet -          26 | write_enb = 0 read_enb = 0 address = 3 data_in = 138 
+# @305 [MON]: Transmitting Transaction packet -          29 | write_enb = 0 read_enb = 0 address = 2 data_in = 193 data_out =   z
+# @305 [REF]: Transmitting Transaction packet -          26 | write_enb = 0 read_enb = 0 address = 3 data_in = 138 data_out =   z
+#  
+# @315 [DRV] DRIVINGGGGGGGG Transaction packet -          27 | write_enb = 0 read_enb = 0 address = 0 data_in =  72 
+# @315 [MON]: Transmitting Transaction packet -          30 | write_enb = 0 read_enb = 0 address = 3 data_in = 138 data_out =   z
+# @315 [REF]: Transmitting Transaction packet -          27 | write_enb = 0 read_enb = 0 address = 0 data_in =  72 data_out =   z
+#  
+# @325 [DRV] DRIVINGGGGGGGG Transaction packet -          28 | write_enb = 0 read_enb = 0 address = 1 data_in =  84 
+# @325 [MON]: Transmitting Transaction packet -          31 | write_enb = 0 read_enb = 0 address = 0 data_in =  72 data_out =   z
+# @325 [REF]: Transmitting Transaction packet -          28 | write_enb = 0 read_enb = 0 address = 1 data_in =  84 data_out =   z
+#  
+# @335 [DRV] DRIVINGGGGGGGG Transaction packet -          29 | write_enb = 0 read_enb = 0 address = 2 data_in = 243 
+# @335 [MON]: Transmitting Transaction packet -          32 | write_enb = 0 read_enb = 0 address = 1 data_in =  84 data_out =   z
+# @335 [REF]: Transmitting Transaction packet -          29 | write_enb = 0 read_enb = 0 address = 2 data_in = 243 data_out =   z
+#  
+# @345 [DRV] DRIVINGGGGGGGG Transaction packet -          30 | write_enb = 0 read_enb = 0 address = 3 data_in = 236 
+# @345 [MON]: Transmitting Transaction packet -          33 | write_enb = 0 read_enb = 0 address = 2 data_in = 243 data_out =   z
+# @345 [REF]: Transmitting Transaction packet -          30 | write_enb = 0 read_enb = 0 address = 3 data_in = 236 data_out =   z
+#  
+# @355 [DRV] DRIVINGGGGGGGG Transaction packet -          31 | write_enb = 0 read_enb = 0 address = 0 data_in = 109 
+# @355 [MON]: Transmitting Transaction packet -          34 | write_enb = 0 read_enb = 0 address = 3 data_in = 236 data_out =   z
+# @355 [REF]: Transmitting Transaction packet -          31 | write_enb = 0 read_enb = 0 address = 0 data_in = 109 data_out =   z
+#  
+# @365 [MON]: Transmitting Transaction packet -          35 | write_enb = 0 read_enb = 0 address = 0 data_in = 109 data_out =   z
+# ----------------------------------------VERFICATION REPORT---------------------------------------------
+# PASS COUNT =           8
+# FAIL COUNT =           0
+# PASS PERCENTAGE = 100.00%
+# -------------------------------------------------------------------------------------------------------
+#  
+# -----------------------------------------------------COVERAGE REPORT-----------------------------------------------------------------
+#  COVERAGE = 89.84%
+# TEST CASE 5 : WRITE = 1 READ = 1
+# TX_COUNT =           8
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# @375 [DRV] DRIVINGGGGGGGG Transaction packet -          32 | write_enb = 1 read_enb = 1 address = 1 data_in = 131 
+# @375 [MON]: Transmitting Transaction packet -          36 | write_enb = 0 read_enb = 0 address = 0 data_in = 109 data_out =   z
+# @375 [REF]: Transmitting Transaction packet -          32 | write_enb = 1 read_enb = 1 address = 1 data_in = 131 data_out =   z
+#  
+# @385 [DRV] DRIVINGGGGGGGG Transaction packet -          33 | write_enb = 1 read_enb = 1 address = 2 data_in = 142 
+# @385 [MON]: Transmitting Transaction packet -          37 | write_enb = 1 read_enb = 1 address = 1 data_in = 131 data_out =   z
+# @385 [REF]: Transmitting Transaction packet -          33 | write_enb = 1 read_enb = 1 address = 2 data_in = 142 data_out =   z
+#  
+# @395 [DRV] DRIVINGGGGGGGG Transaction packet -          34 | write_enb = 1 read_enb = 1 address = 3 data_in =  88 
+# @395 [MON]: Transmitting Transaction packet -          38 | write_enb = 1 read_enb = 1 address = 2 data_in = 142 data_out =   z
+# @395 [REF]: Transmitting Transaction packet -          34 | write_enb = 1 read_enb = 1 address = 3 data_in =  88 data_out =   z
+#  
+# @405 [DRV] DRIVINGGGGGGGG Transaction packet -          35 | write_enb = 1 read_enb = 1 address = 0 data_in =   7 
+# @405 [MON]: Transmitting Transaction packet -          39 | write_enb = 1 read_enb = 1 address = 3 data_in =  88 data_out =   z
+# @405 [REF]: Transmitting Transaction packet -          35 | write_enb = 1 read_enb = 1 address = 0 data_in =   7 data_out =   z
+#  
+# @415 [DRV] DRIVINGGGGGGGG Transaction packet -          36 | write_enb = 1 read_enb = 1 address = 0 data_in = 236 
+# @415 [MON]: Transmitting Transaction packet -          40 | write_enb = 1 read_enb = 1 address = 0 data_in =   7 data_out =   z
+# @415 [REF]: Transmitting Transaction packet -          36 | write_enb = 1 read_enb = 1 address = 0 data_in = 236 data_out =   z
+#  
+# @425 [DRV] DRIVINGGGGGGGG Transaction packet -          37 | write_enb = 1 read_enb = 1 address = 2 data_in =  22 
+# @425 [MON]: Transmitting Transaction packet -          41 | write_enb = 1 read_enb = 1 address = 0 data_in = 236 data_out =   z
+# @425 [REF]: Transmitting Transaction packet -          37 | write_enb = 1 read_enb = 1 address = 2 data_in =  22 data_out =   z
+#  
+# @435 [DRV] DRIVINGGGGGGGG Transaction packet -          38 | write_enb = 1 read_enb = 1 address = 1 data_in = 177 
+# @435 [MON]: Transmitting Transaction packet -          42 | write_enb = 1 read_enb = 1 address = 2 data_in =  22 data_out =   z
+# @435 [REF]: Transmitting Transaction packet -          38 | write_enb = 1 read_enb = 1 address = 1 data_in = 177 data_out =   z
+#  
+# @445 [DRV] DRIVINGGGGGGGG Transaction packet -          39 | write_enb = 1 read_enb = 1 address = 3 data_in = 104 
+# @445 [MON]: Transmitting Transaction packet -          43 | write_enb = 1 read_enb = 1 address = 1 data_in = 177 data_out =   z
+# @445 [REF]: Transmitting Transaction packet -          39 | write_enb = 1 read_enb = 1 address = 3 data_in = 104 data_out =   z
+#  
+# @455 [MON]: Transmitting Transaction packet -          44 | write_enb = 1 read_enb = 1 address = 3 data_in = 104 data_out =   z
+# ----------------------------------------VERFICATION REPORT---------------------------------------------
+# PASS COUNT =           8
+# FAIL COUNT =           0
+# PASS PERCENTAGE = 100.00%
+# -------------------------------------------------------------------------------------------------------
+#  
+# -----------------------------------------------------COVERAGE REPORT-----------------------------------------------------------------
+#  COVERAGE = 91.15%
+# ** Note: $finish    : TEST_BENCH/STATIC_FILES/tb.sv(25)
+#    Time: 955 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 00:02:05 on Jul 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

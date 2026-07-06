@@ -1,7 +1,0 @@
-var g_data = {'dummy':null,
-'5':'TB_PACKAGE.sv',
-'6':'defines.svh',
-'4':'driver.sv',
-'3':'generator.sv',
-'1':'interface.sv',
-'2':'tb.sv'};

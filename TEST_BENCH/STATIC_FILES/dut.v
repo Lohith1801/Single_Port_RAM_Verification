@@ -33,7 +33,7 @@ module RAM(
  
 //Variable declarations 
  reg [7:0] data_out ;
- reg [7:0] memory [0:3];
+ reg [7:0] memory [0:31];
 
 //Memory Write Block Write Operation : When write_enb = 1,
 always @(posedge clk)

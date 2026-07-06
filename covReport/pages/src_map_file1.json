@@ -1,0 +1,7 @@
+var g_data = {'dummy':null,
+'4':'TEST_BENCH/DYNAMIC_FILES/driver.sv',
+'3':'TEST_BENCH/DYNAMIC_FILES/generator.sv',
+'5':'TEST_BENCH/STATIC_FILES/TB_PACKAGE.sv',
+'6':'TEST_BENCH/STATIC_FILES/defines.svh',
+'1':'TEST_BENCH/STATIC_FILES/interface.sv',
+'2':'TEST_BENCH/STATIC_FILES/tb.sv'};

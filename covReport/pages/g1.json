@@ -1,0 +1,13 @@
+var g_data = {
+g47:[{dummy:0},
+{name:'cg',f:1,type:1,id:48,tb:'88',h:'54',m:'34',hp:'61.36%',cov:['91.14%','G'],g:'100.00%',gp:['91.14%','G'],opts:[[],['merge_instance','auto(true)']],parent:'47'}],
+c48:{name:'cg',type:1,pHash:'47',pPath:'/tb_pkg/driver',totals:[72,38,'52.77%','Y',16,16,'100.00%','G'],cvp:[{dummy:0},
+{name:'cp_address',f:1,type:4,id:49,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'48'},
+{name:'cp_data_in',f:1,type:4,id:50,tb:'64',h:'30',m:'34',hp:'46.87%',cov:['46.87%','R'],g:'100.00%',gp:['46.87%','R'],hasb:1,parent:'48'},
+{name:'cp_write_enb',f:1,type:4,id:51,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'48'},
+{name:'cp_read_enb',f:1,type:4,id:52,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'48'}],crx:[{dummy:0},
+{name:'address_X_write_enb',f:1,type:5,id:53,tb:'8',h:'8',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'48',cross:['cp_address','cp_write_enb']},
+{name:'address_X_read_enb',f:1,type:5,id:54,tb:'8',h:'8',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'48',cross:['cp_address','cp_read_enb']}]},
+dummyEnd:0
+};
+processCovergroupsData(g_data);

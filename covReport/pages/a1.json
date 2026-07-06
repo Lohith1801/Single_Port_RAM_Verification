@@ -1,0 +1,9 @@
+var g_data = {
+a45:{
+scopes:[{s:'37',b:'0',val:'tb_pkg'},{val:'generator'},{val:'run'},{link:'z.htm?f=0&s=45',val:'#ublk#128476951#16'}]
+,assertions:[{dummy:0},{cr:'c',c:'g',z:'immed__17',fc:'Gr',pc:'Gr',h0:'0',h1:'40'}
+],
+},
+dummyEnd:0
+};
+processAssertionsData(g_data,1);

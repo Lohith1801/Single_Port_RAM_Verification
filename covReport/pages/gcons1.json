@@ -1,0 +1,4 @@
+var g_db_data = [
+{dummy:0},
+{name:'cg',f:1,type:6,id:48,tb:'88',h:'54',m:'34',hp:'61.36%',cov:['91.14%','G'],g:'100.00%',gp:['91.14%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/tb_pkg/driver',parent:'47'}];
+processConsCovergroupsData(g_db_data);

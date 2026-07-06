@@ -1,6 +1,6 @@
 `define DATA_WIDTH 8
-`define ADDR_COUNT 4
-`define TX_COUNT 8
+`define ADDR_COUNT 32
+`define TX_COUNT 64
 
 function automatic int log_base2(int val);
 	log_base2 = 0;
