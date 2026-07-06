@@ -1,5 +1,5 @@
-vlog TB_PACKAGE.sv
-vlog dut.v
- vlog interface.sv
- vlog tb.sv
+vlog TEST_BENCH/STATIC_FILES/TB_PACKAGE.sv
+vlog TEST_BENCH/STATIC_FILES/dut.v
+ vlog TEST_BENCH/STATIC_FILES/interface.sv
+ vlog TEST_BENCH/STATIC_FILES/tb.sv
  quit -f

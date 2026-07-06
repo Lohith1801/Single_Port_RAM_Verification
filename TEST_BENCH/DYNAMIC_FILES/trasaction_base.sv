@@ -37,19 +37,19 @@ endclass
 
 
 class write_first extends transaction_base;
-
-    constraint write_first {
+	
+    constraint set_write_first {
         {write_enb, read_enb} == 2'b10;
     }
 
    virtual function transaction_base copy();
         write_first copy1;
 	copy1 = new();
-	copy1.data_in   = data_in;
-        copy1.address   = address;
-        copy1.write_enb = write_enb;
-        copy1.read_enb  = read_enb;
-        copy1.data_out  = data_out;
+	copy1.data_in   = this.data_in;
+        copy1.address   = this.address;
+        copy1.write_enb = this.write_enb;
+        copy1.read_enb  = this.read_enb;
+        copy1.data_out  = this.data_out;
         return copy1;
     endfunction 
 
@@ -58,18 +58,18 @@ endclass
 
 class read_first extends transaction_base;
 
-    constraint read_first {
+    constraint set_read_first {
         {write_enb, read_enb} == 2'b01;
     }
 
     virtual function transaction_base copy();
         read_first copy1;
         copy1 = new();
-        copy1.data_in   = data_in;
-        copy1.address   = address;
-        copy1.write_enb = write_enb;
-        copy1.read_enb  = read_enb;
-        copy1.data_out  = data_out;
+        copy1.data_in   = this.data_in;
+        copy1.address   = this.address;
+        copy1.write_enb = this.write_enb;
+        copy1.read_enb  = this.read_enb;
+        copy1.data_out  = this.data_out;
         return copy1;
     endfunction
 endclass
@@ -77,18 +77,18 @@ endclass
 
 class no_write_read extends transaction_base;
 
-    constraint no_write_read_c {
+    constraint set_no_write_read_c {
         {write_enb, read_enb} == 2'b00;
     }
 
     virtual function transaction_base copy();
         no_write_read copy1;
         copy1 = new();
-        copy1.data_in   = data_in;
-        copy1.address   = address;
-        copy1.write_enb = write_enb;
-        copy1.read_enb  = read_enb;
-        copy1.data_out  = data_out;
+        copy1.data_in   = this.data_in;
+        copy1.address   = this.address;
+        copy1.write_enb = this.write_enb;
+        copy1.read_enb  = this.read_enb;
+        copy1.data_out  = this.data_out;
         return copy1;
     endfunction
 endclass
@@ -96,18 +96,18 @@ endclass
 
 class both_write_read extends transaction_base;
 
-    constraint both_write_read_c {
+    constraint set_both_write_read_c {
         {write_enb, read_enb} == 2'b11;
     }
 
     virtual function transaction_base copy();
         both_write_read copy1;
         copy1 = new();
-        copy1.data_in   = data_in;
-        copy1.address   = address;
-        copy1.write_enb = write_enb;
-        copy1.read_enb  = read_enb;
-        copy1.data_out  = data_out;
+        copy1.data_in   = this.data_in;
+        copy1.address   = this.address;
+        copy1.write_enb = this.write_enb;
+        copy1.read_enb  = this.read_enb;
+        copy1.data_out  = this.data_out;
         return copy1;
     endfunction
 endclass

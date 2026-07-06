@@ -87,7 +87,7 @@ class reference_model;
 			case({tx.write_enb,tx.read_enb})
 				2'b10: ref_mem[tx.address] = tx.data_in;
 				2'b01: tx.data_out = ref_mem[tx.address];
-				default :tx.data_out = tx.data_out ;
+				default : ;
 			endcase
 			$display("@%0t [REF]: Transmitting Transaction packet - %d | write_enb = %d read_enb = %d address = %d data_in = %d data_out = %d",$time,count++,tx.write_enb,tx.read_enb,tx.address,tx.data_in, tx.data_out);
 			$display();

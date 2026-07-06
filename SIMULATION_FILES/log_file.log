@@ -1,0 +1,64 @@
+# vsim -vopt work.test_bench -voptargs="+acc=npr" -assertdebug -l log_file.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll ucdb_file.ucdb; run -all; exit" 
+# Start time: 00:53:45 on Jul 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.RAM_inf(fast)
+# Loading work.tb_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.test_bench(fast)
+# Loading work.RAM_inf(fast)
+# Loading work.RAM(fast)
+# coverage save -onexit -assert -directive -cvg -codeAll ucdb_file.ucdb
+#  run -all
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# Generated new Packet...
+# @15 [DRV] DRIVINGGGGGGGG Transaction packet -           0 | write_enb = 1 read_enb = 0 address = 1 data_in = 249 
+# @15 [MON]: Transmitting Transaction packet -           0 | write_enb = 0 read_enb = 0 address = 0 data_in =   0 data_out =   z
+# @15 [REF]: Transmitting Transaction packet -           0 | write_enb = 1 read_enb = 0 address = 1 data_in = 249 data_out =   z
+#  
+# @25 [DRV] DRIVINGGGGGGGG Transaction packet -           1 | write_enb = 1 read_enb = 0 address = 0 data_in = 196 
+# @25 [MON]: Transmitting Transaction packet -           1 | write_enb = 1 read_enb = 0 address = 1 data_in = 249 data_out =   z
+# @25 [REF]: Transmitting Transaction packet -           1 | write_enb = 1 read_enb = 0 address = 0 data_in = 196 data_out =   z
+#  
+# @35 [DRV] DRIVINGGGGGGGG Transaction packet -           2 | write_enb = 0 read_enb = 1 address = 1 data_in = 154 
+# @35 [MON]: Transmitting Transaction packet -           2 | write_enb = 1 read_enb = 0 address = 0 data_in = 196 data_out =   z
+# @35 [REF]: Transmitting Transaction packet -           2 | write_enb = 0 read_enb = 1 address = 1 data_in = 154 data_out = 249
+#  
+# @45 [DRV] DRIVINGGGGGGGG Transaction packet -           3 | write_enb = 0 read_enb = 1 address = 1 data_in = 167 
+# @45 [MON]: Transmitting Transaction packet -           3 | write_enb = 0 read_enb = 1 address = 1 data_in = 154 data_out = 249
+# @45 [REF]: Transmitting Transaction packet -           3 | write_enb = 0 read_enb = 1 address = 1 data_in = 167 data_out = 249
+#  
+# @55 [MON]: Transmitting Transaction packet -           4 | write_enb = 0 read_enb = 1 address = 1 data_in = 167 data_out = 249
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# [SCR]: PASS
+# ----------------------------------------VERFICATION REPORT---------------------------------------------
+# PASS COUNT =           4
+# FAIL COUNT =           0
+# PASS PERCENTAGE = 100.00%
+# -------------------------------------------------------------------------------------------------------
+# ---------------------------------------Functional Coverage----------------------------------------
+# 	Coverage percentage = 76.041667
+#  
+# ** Note: $finish    : tb.sv(24)
+#    Time: 555 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 00:53:47 on Jul 06,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
